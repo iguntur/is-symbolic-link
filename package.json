@@ -1,0 +1,32 @@
+{
+  "name": "is-symbolic-link",
+  "version": "0.1.0",
+  "description": "Check if PATH is symbolic link",
+  "license": "MIT",
+  "repository": "iGuntur/is-symbolic-link",
+  "author": {
+    "name": "Guntur",
+    "email": "poetra.guntur@gmail.com",
+    "url": "guntur.starmediateknik.com"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "symbolic",
+    "link",
+    "check",
+    "symlink"
+  ],
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
