@@ -1,4 +1,4 @@
-# is-symbolic-link
+# is-symbolic-link [![Build Status](https://travis-ci.org/iGuntur/is-symbolic-link.svg?branch=master)](https://travis-ci.org/iGuntur/is-symbolic-link)
 
 > Check if PATH is symbolic link
 
