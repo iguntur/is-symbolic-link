@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Check if PATH is symbolic link",
   "license": "MIT",
-  "repository": "iGuntur/is-symbolic-link",
+  "repository": "iguntur/is-symbolic-link",
   "author": {
     "name": "Guntur",
     "email": "poetra.guntur@gmail.com",
