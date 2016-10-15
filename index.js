@@ -20,4 +20,3 @@ module.exports.sync = path => {
 		throw err;
 	}
 };
-
