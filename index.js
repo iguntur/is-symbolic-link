@@ -1,5 +1,6 @@
 'use strict';
 var fs = require('fs');
+var Promise = require('pinkie-promise');
 
 module.exports = function (path) {
 	return new Promise(function (resolve) {
