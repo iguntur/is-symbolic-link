@@ -9,7 +9,9 @@
     "email": "poetra.guntur@gmail.com",
     "url": "guntur.starmediateknik.com"
   },
-  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
