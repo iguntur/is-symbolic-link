@@ -29,11 +29,27 @@ isSymbolicLink('/home/guntur/.npmrc').then(val => {
 const isSymbolicLink = require('is-symbolic-link');
 
 const val = isSymbolicLink.sync('/home/guntur/todo.md');
+
 console.log(val);
 //=> false
 ```
 
 
+## API
+
+### isSymbolicLink(input)
+
+Returns a promise value of an input
+
+### isSymbolicLink.sync(input)
+
+Returns a boolean value of an input
+
+#### input
+
+- Type: `string`
+
+
 ## License
 
-MIT © [Guntur](http://guntur.starmediateknik.com)
+MIT © [Guntur Poetra](http://guntur.starmediateknik.com)
