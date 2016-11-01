@@ -2,6 +2,7 @@
 
 > Check if PATH is symbolic link
 
+
 ## Install
 
 ```
