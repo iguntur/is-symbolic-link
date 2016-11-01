@@ -19,10 +19,15 @@
     "test": "xo && ava"
   },
   "keywords": [
-    "symbolic",
-    "link",
+    "boolean",
     "check",
-    "symlink"
+    "is-ln",
+    "link",
+    "ln",
+    "promise",
+    "symbolic",
+    "symlink",
+    "value"
   ],
   "dependencies": {
     "pinkie-promise": "^2.0.1"
