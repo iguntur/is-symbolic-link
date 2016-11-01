@@ -33,7 +33,7 @@
     "pinkie-promise": "^2.0.1"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "fs-extra": "^0.30.0",
     "tempfile": "^1.1.1",
     "xo": "^0.16.0"
