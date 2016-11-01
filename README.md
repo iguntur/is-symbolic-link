@@ -51,6 +51,11 @@ Returns a boolean value of an input
 - Type: `string`
 
 
+## Related
+
+- [get-symlinks](https://github.com/iguntur/get-symlinks)
+
+
 ## License
 
 MIT © [Guntur Poetra](http://guntur.starmediateknik.com)
