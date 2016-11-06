@@ -1,4 +1,4 @@
-# is-symbolic-link [![Build Status](https://travis-ci.org/iguntur/is-symbolic-link.svg?branch=master)](https://travis-ci.org/iguntur/is-symbolic-link) [![npm](https://img.shields.io/npm/v/is-symbolic-link.svg?style=flat-square)](https://npmjs.com/package/is-symbolic-link)
+# is-symbolic-link [![Build Status](https://travis-ci.org/iguntur/is-symbolic-link.svg?branch=master)](https://travis-ci.org/iguntur/is-symbolic-link)
 
 > Check if PATH is symbolic link
 
