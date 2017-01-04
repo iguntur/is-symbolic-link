@@ -1,5 +1,5 @@
 'use strict';
-var fs = require('fs');
+const fs = require('fs');
 
 module.exports = path => new Promise(resolve => {
 	return fs.lstat(path, (err, stats) => {
