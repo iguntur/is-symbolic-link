@@ -1,42 +1,28 @@
-import p from 'path';
 import test from 'ava';
-import fs from 'fs-extra';
-import tempfile from 'tempfile';
 import fn from './';
 
-const fixtures = ['foo', 'bar', 'baz', 'qux'];
-
-test.beforeEach(t => {
-	t.context.path = tempfile();
-	t.context.files = p.join(t.context.path, 'files');
-	t.context.folders = p.join(t.context.path, 'folders');
-	t.context.symlinks = p.join(t.context.path, 'symlinks');
-
-	fixtures.forEach(dirName => fs.mkdirpSync(p.join(t.context.folders, dirName)));
-	fixtures.forEach(fileName => {
-		fs.ensureFileSync(p.join(t.context.files, fileName));
-		fs.ensureSymlinkSync(p.join(t.context.files, fileName), p.join(t.context.symlinks, fileName));
-	});
+test('async: return true if PATH is symlink', async t => {
+	t.true(await fn('./fixtures/symlink.folder'));
+	t.true(await fn('./fixtures/symlink.file'));
 });
 
-test('async: is symbolic link', t => {
-	fixtures.forEach(async fileName => t.true(await fn(p.join(t.context.symlinks, fileName))));
+test('async: return false if PATH is not symlink', async t => {
+	t.false(await fn(''));
+	t.false(await fn(__filename));
+	t.false(await fn('./index.js'));
+	t.false(await fn('./fixtures/folder'));
+	t.false(await fn('./fixtures/file.txt'));
 });
 
-test('async: is not symbolic link', t => {
-	fixtures.forEach(async fileName => {
-		t.false(await fn(p.join(t.context.folders, fileName)));
-		t.false(await fn(p.join(t.context.files, fileName)));
-	});
+test('sync: return true if PATH is symlink', t => {
+	t.true(fn.sync('./fixtures/symlink.folder'));
+	t.true(fn.sync('./fixtures/symlink.file'));
 });
 
-test('sync: is symbolic link', t => {
-	fixtures.forEach(fileName => t.true(fn.sync(p.join(t.context.symlinks, fileName))));
-});
-
-test('sync: is not symbolic link', t => {
-	fixtures.forEach(fileName => {
-		t.false(fn.sync(p.join(t.context.files, fileName)));
-		t.false(fn.sync(p.join(t.context.folders, fileName)));
-	});
+test('sync: return false if PATH is not symlink', t => {
+	t.false(fn.sync(''));
+	t.false(fn.sync(__filename));
+	t.false(fn.sync('./index.js'));
+	t.false(fn.sync('./fixtures/folder'));
+	t.false(fn.sync('./fixtures/file.txt'));
 });

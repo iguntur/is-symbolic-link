@@ -1,25 +1,21 @@
 'use strict';
 var fs = require('fs');
-var Promise = require('pinkie-promise');
 
-module.exports = function (path) {
-	return new Promise(function (resolve) {
-		fs.lstat(path, function (err, stats) {
-			if (err) {
-				throw err;
-			}
-
-			resolve(stats.isSymbolicLink());
-		});
+module.exports = path => new Promise(resolve => {
+	return fs.lstat(path, (err, stats) => {
+		resolve(!err && stats.isSymbolicLink());
 	});
-};
+});
 
-module.exports.sync = function (path) {
+module.exports.sync = path => {
 	try {
-		var stats = fs.lstatSync(path);
-
+		const stats = fs.lstatSync(path);
 		return stats.isSymbolicLink();
 	} catch (err) {
+		if (err.code === 'ENOENT') {
+			return false;
+		}
+
 		throw err;
 	}
 };
