@@ -1,7 +1,7 @@
 {
   "name": "is-symbolic-link",
   "version": "2.0.2",
-  "description": "Check if PATH is symbolic link",
+  "description": "Indicates if path is symbolic link",
   "license": "MIT",
   "repository": "iguntur/is-symbolic-link",
   "author": {
@@ -19,22 +19,21 @@
     "test": "xo && ava"
   },
   "keywords": [
+    "async",
+    "await",
     "boolean",
     "check",
     "is-ln",
     "link",
     "ln",
+    "lnfs",
     "promise",
     "symbolic",
     "symlink",
     "value"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "ava": "^0.17.0",
-    "xo": "^0.17.1"
-  },
-  "xo": {
-    "esnext": true
+    "ava": "*",
+    "xo": "*"
   }
 }

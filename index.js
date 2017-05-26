@@ -9,8 +9,7 @@ module.exports = path => new Promise(resolve => {
 
 module.exports.sync = path => {
 	try {
-		const stats = fs.lstatSync(path);
-		return stats.isSymbolicLink();
+		return fs.lstatSync(path).isSymbolicLink();
 	} catch (err) {
 		if (err.code === 'ENOENT') {
 			return false;
