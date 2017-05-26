@@ -1,6 +1,6 @@
 {
   "name": "is-symbolic-link",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Indicates if path is symbolic link",
   "license": "MIT",
   "repository": "iguntur/is-symbolic-link",
