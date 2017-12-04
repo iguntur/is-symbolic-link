@@ -1,12 +1,12 @@
 # is-symbolic-link [![Build Status](https://travis-ci.org/iguntur/is-symbolic-link.svg?branch=master)](https://travis-ci.org/iguntur/is-symbolic-link)
 
-> Indicates if path is symbolic link
+> Check if filepath is symbolic link
 
 
 ## Install
 
 ``` bash
-$ npm install --save is-symbolic-link
+$ npm install is-symbolic-link
 ```
 
 
@@ -42,9 +42,9 @@ Returns a boolean value of an input
 
 ## Related
 
-- [get-symlinks](https://github.com/iguntur/get-symlinks)
+- [get-symlinks](https://github.com/iguntur/get-symlinks) - Get all symbolic link in directory
 
 
 ## License
 
-MIT © [Guntur Poetra](http://guntur.starmediateknik.com)
+MIT © [Guntur Poetra](https://github.com/iguntur)

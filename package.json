@@ -1,39 +1,39 @@
 {
-  "name": "is-symbolic-link",
-  "version": "2.0.3",
-  "description": "Indicates if path is symbolic link",
-  "license": "MIT",
-  "repository": "iguntur/is-symbolic-link",
-  "author": {
-    "name": "Guntur Poetra",
-    "email": "poetra.guntur@gmail.com",
-    "url": "http://guntur.starmediateknik.com"
-  },
-  "files": [
-    "index.js"
-  ],
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "keywords": [
-    "async",
-    "await",
-    "boolean",
-    "check",
-    "is-ln",
-    "link",
-    "ln",
-    "lnfs",
-    "promise",
-    "symbolic",
-    "symlink",
-    "value"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "is-symbolic-link",
+	"version": "2.0.3",
+	"description": "Check if filepath is symbolic link",
+	"license": "MIT",
+	"repository": "iguntur/is-symbolic-link",
+	"author": {
+		"name": "Guntur Poetra",
+		"email": "poetra.guntur@gmail.com",
+		"url": "https://github.com/iguntur"
+	},
+	"files": [
+		"index.js"
+	],
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"keywords": [
+		"async",
+		"await",
+		"boolean",
+		"check",
+		"is-ln",
+		"link",
+		"ln",
+		"lnfs",
+		"promise",
+		"symbolic",
+		"symlink",
+		"value"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }
